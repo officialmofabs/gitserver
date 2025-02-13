@@ -1,4 +1,4 @@
-# git-server-docker
+# gitserver-srv
 A lightweight Git Server Docker image built with Alpine Linux. Available on [GitHub](https://github.com/jkarlosb/git-server-docker) and [Docker Hub](https://hub.docker.com/r/jkarlos/git-server-docker/)
 
 !["image git server docker" "git server docker"](https://raw.githubusercontent.com/jkarlosb/git-server-docker/master/git-server-docker.jpg)
@@ -12,7 +12,7 @@ How to run the container in port 2222 with two volumes: keys volume for public k
 How to use a public key:
 
     Copy them to keys folder: 
-	- From host: $ cp ~/.ssh/id_rsa.pub ~/git-server/keys
+	- From host: $ cp ~/.ssh/id_rsa.pub ~/gitserver/keys
 	- From remote: $ scp ~/.ssh/id_rsa.pub user@host:~/git-server/keys
 	You need restart the container when keys are updated:
 	$ docker restart <container-id>
